@@ -196,15 +196,21 @@ var controller = (function(model, view){
     var fetchRepositoryData = function(){
         fetch('https://api.github.com/graphql',{
             method:'POST',
-            headers: { "Content-Type": "application/json", "Authorization": "Bearer 2e5ea570f6546154a9e2d35174f1ced65b82e71b"},
+            headers: { "Content-Type": "application/json", "Authorization": "Bearer 3eae9828602846d445e9cd3e820767bd8742e062"},
             body: JSON.stringify({
                 query: model.fetchRepoQuery
             })
         })
         .then(
-            res=>res.json()
+            res=>{
+                if(res.status === 401){
+                    throw res.statusText
+                }
+                return res.json()
+            }
         )
         .then(data=>{
+            console.log(data)
             model.setUser(data.data.user)
             view.showContent()
             view.populateRepository(model.getUser())
@@ -214,6 +220,7 @@ var controller = (function(model, view){
         })
         .catch((error)=>{
             console.log(error)
+            alert(error)
         })
     }
 
