@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./font/stylesheet.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="loader__row" id="loader">
+      <div class="loader"></div>
+    </div>
+
+    <div class="main-content hidden" id="mainContent">
+      <!-- HEADER -->
+      <header class="nav">
+        <ul class="list">
+          <li class="list__item">
+            <a href="#" class="list__link">
+              <object
+                data="./assets/svg/github-logo.svg"
+                type="image/svg+xml"
+                class="nav-icons"
+              ></object>
+            </a>
+          </li>
+          <li class="list__item">
+            <a href="#" class="list__link">
+              <div class="input__group input__group--prepend">
+                <input
+                  type="search"
+                  class="input__field"
+                  placeholder="Search or jump to..."
+                />
+                <label for="" class="input__icon">/</label>
+              </div>
+            </a>
+          </li>
+          <li class="list__item">
+            <a href="#" class="list__link">Pull requests</a>
+          </li>
+          <li class="list__item"><a href="#" class="list__link">Issues</a></li>
+          <li class="list__item">
+            <a href="#" class="list__link">Marketplace</a>
+          </li>
+          <li class="list__item"><a href="#" class="list__link">Explore</a></li>
+        </ul>
+        <ul class="list">
+          <li class="list__item">
+            <a href="#" class="list__link">
+              <object
+                data="./assets/svg/notification-icon.svg"
+                type="image/svg+xml"
+                class="nav-icons"
+              ></object>
+            </a>
+          </li>
+          <li class="list__item">
+            <a href="#" class="list__link">
+              <object
+                data="./assets/svg/plus-icon.svg"
+                type="image/svg+xml"
+                class="nav-icons"
+              ></object>
+              <span>&#9660;</span>
+            </a>
+          </li>
+          <li class="list__item">
+            <a href="#" class="list__link">
+              <img
+                src="./assets/img/profile.jpg"
+                alt="profile image"
+                class="nav__img"
+                id="nav-img"
+              />
+              <span>&#9660;</span>
+            </a>
+          </li>
+        </ul>
+      </header>
+      <header class="nav nav--sm" id="nav-sm">
+        <div class="nav__header">
+          <span class="burger" id="burger"></span>
+          <a href="#" class="list__link">
+            <object
+              data="./assets/svg/github-logo.svg"
+              type="image/svg+xml"
+              class="nav-icons"
+            ></object>
+          </a>
+          <a href="#" class="list__link">
+            <object
+              data="./assets/svg/notification-icon.svg"
+              type="image/svg+xml"
+              class="nav-icons"
+            ></object>
+          </a>
+        </div>
+        <ul class="list">
+          <li class="list__item">
+            <a href="#" class="list__link">
+              <div class="input__group input__group--prepend">
+                <input
+                  type="search"
+                  class="input__field"
+                  placeholder="Search or jump to..."
+                />
+                <label for="" class="input__icon">/</label>
+              </div>
+            </a>
+          </li>
+          <li class="list__item">
+            <a href="#" class="list__link">Pull requests</a>
+          </li>
+          <li class="list__item"><a href="#" class="list__link">Issues</a></li>
+          <li class="list__item">
+            <a href="#" class="list__link">Marketplace</a>
+          </li>
+          <li class="list__item"><a href="#" class="list__link">Explore</a></li>
+        </ul>
+      </header>
+      <div class="profile profile--sm" id="profile-sm">
+        <div class="profile__header">
+          <div class="profile__img-container">
+            <img
+              src="./assets/img/profile.jpg"
+              alt="profile image"
+              class="profile__img"
+            />
+          </div>
+          <div class="profile__names">
+            <h4 class="profile__name">Victory Oki</h4>
+            <h5 class="profile__user-name">victory-oki</h5>
+          </div>
+        </div>
+        <p class="profile__desc">
+          A front-end developer who is passionate about building fun and
+          interesting user Interfaces
+        </p>
+      </div>
+      <!-- nav-2 -->
+      <div class="sticky__container">
+        <div class="container">
+          <nav class="nav-2 u-grid-25-75">
+            <div class="col-1"></div>
+            <div class="col-2">
+              <ul class="list">
+                <li class="list__item">
+                  <a href="#" class="list__link">
+                    <img
+                      src="./assets/svg/overview-icon.svg"
+                      alt="overview-icon"
+                    />
+                    <p class="list__title">Overview</p>
+                  </a>
+                </li>
+                <li class="list__item active">
+                  <a href="#" class="list__link">
+                    <object
+                      data="./assets/svg/repository-icon.svg"
+                      type="image/svg+xml"
+                    ></object>
+                    <p class="list__title">Repositories</p>
+                    <div class="list__count repoCount">22</div>
+                  </a>
+                </li>
+                <li class="list__item">
+                  <a href="#" class="list__link">
+                    <img
+                      src="./assets/svg/projects-icon.svg"
+                      alt="projects icon"
+                    />
+                    <p class="list__title">Projects</p>
+                  </a>
+                </li>
+                <li class="list__item">
+                  <a href="#" class="list__link">
+                    <img
+                      src="./assets/svg/package-icon.svg"
+                      alt="packages icon"
+                    />
+                    <p class="list__title">Packages</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="u-grid-25-75">
+          <div class="col-1">
+            <div class="profile" id="profile-lg">
+              <div class="profile__img-container">
+                <img
+                  src="./assets/img/profile.jpg"
+                  alt="profile image"
+                  class="profile__img"
+                />
+              </div>
+              <h4 class="profile__name">Victory Oki</h4>
+              <h5 class="profile__user-name">victory-oki</h5>
+              <p class="profile__desc">
+                A front-end developer who is passionate about building fun and
+                interesting user Interfaces
+              </p>
+            </div>
+          </div>
+          <div class="col-2">
+            <header class="heading">
+              <div class="search">
+                <div class="input__group">
+                  <input
+                    type="search"
+                    class="input__field"
+                    placeholder="Find a repository..."
+                  />
+                </div>
+              </div>
+              <span class="search__desc"
+                ><b class="repoCount">124</b> results for
+                <b>public</b> repositories</span
+              >
+            </header>
+            <main class="main" id="repositoryContainer">
+              <div class="repository">
+                <div class="repository__desc">
+                  <h5 class="repository__title">Code-graveyard</h5>
+                  <p class="repository__brief"></p>
+                  <div class="repository__stats">
+                    <div class="repository__stack">
+                      <div class="repository__stack--icon javascript"></div>
+                      <div class="repository__stack--title">JavaScript</div>
+                    </div>
+                    <div class="repository__star">
+                      <img
+                        src="./assets/svg/star-icon.svg"
+                        class="repository__star--icon"
+                        alt="star icon"
+                      />
+                      <span class="repository__star--count">22</span>
+                    </div>
+                    <div class="repository__fork">
+                      <img
+                        src="./assets/svg/fork-icon.svg"
+                        alt="fork icon"
+                        class="repository__fork--icon"
+                      />
+                      <span class="repository__fork--count">9</span>
+                    </div>
+                    <div class="repository__time-stamp">Updated on 1 Oct</div>
+                  </div>
+                </div>
+                <button class="repository__star-action">
+                  <img src="./assets/svg/star-icon.svg" alt="star icon" />
+                  <span>Star</span>
+                </button>
+              </div>
+            </main>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,11 @@
+.nav-icons path {
+  fill: #fff;
+}
+
+.nav-icons:hover path {
+  fill: rgba(255, 255, 255, 0.7);
+}
+
+.list__item:not(.active) .nav-icon-2 path {
+  fill: #959da5;
+}
