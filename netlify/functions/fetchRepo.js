@@ -13,6 +13,7 @@ exports.handler = async (event, context, callback) => {
         body: event.body
         })
      let data = await response.json()
+     console.log(data)
      await pass(data)
    } catch(err) {
        let error = {

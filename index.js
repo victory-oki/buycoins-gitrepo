@@ -194,9 +194,9 @@ var controller = (function(model, view){
     }
 
     var fetchRepositoryData = function(){
-        fetch('./netlify/functions/fetchRepo',{
+        fetch('https://api.github.com/graphql',{
             method:'POST',
-            headers: { "Content-Type": "application/json"},
+            headers: { "Content-Type": "application/json", "Authorization": `Bearer ${process.env.ACCESS_TOKEN}` },
             body: JSON.stringify({
                 query: model.fetchRepoQuery
             })
