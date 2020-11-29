@@ -196,7 +196,7 @@ var controller = (function(model, view){
     var fetchRepositoryData = function(){
         fetch('https://api.github.com/graphql',{
             method:'POST',
-            headers: { "Content-Type": "application/json", "Authorization": `Bearer ${process.env.ACCESS_TOKEN}` },
+            headers: { "Content-Type": "application/json", "Authorization": `Bearer ${ACCESS_TOKEN}` },
             body: JSON.stringify({
                 query: model.fetchRepoQuery
             })
